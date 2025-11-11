@@ -1,0 +1,17 @@
+# Ignorar archivos sensibles o binarios
+*.rar
+*.zip
+*.docx
+*.jpg
+*.png
+*.db
+
+# Ignorar entorno virtual y dependencias locales
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Archivos de sistema
+Thumbs.db
+
