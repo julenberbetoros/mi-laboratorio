@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-# cryptohack_all_improved.py
-# Versión mejorada de cryptohack_all.py con heurísticas para el ejercicio 10
 
 import os
 import sys
 import subprocess
-import re
+import re 
 import base64
 from typing import Optional, List, Tuple
 import itertools
