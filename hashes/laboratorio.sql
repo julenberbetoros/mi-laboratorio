@@ -1,0 +1,54 @@
+-- MySQL dump 10.13  Distrib 8.0.43, for Linux (x86_64)
+--
+-- Host: localhost    Database: laboratorio
+-- ------------------------------------------------------
+-- Server version	8.0.43-0ubuntu0.24.04.2
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `users` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) NOT NULL,
+  `password_hash` varchar(255) NOT NULL,
+  `created_at` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'user1','$2b$12$yDZzKQfyAGgg4rZf.s2NQ.OC/v5U0XFTPVamWBpSTGVmWqYaSd93q','2025-11-11 19:35:37'),(2,'user2','$2b$12$UlIdkk9W1XNu2bovJYvjDe9C8/0Cb9iKuGYlAxEXuIaXhuYhACLx.','2025-11-11 19:35:37'),(3,'user3','$2b$12$943/T95o913CjIfeoAHlZ.UocPM/MsBspuJreYhMoNzXvDo2ss3pK','2025-11-11 19:35:37'),(4,'user4','$2b$12$zs0LOo0iQ3rUy.UU2I.V6uvoTkpmhKMpWDcDvibhk2HQWSr5b89Ge','2025-11-11 19:35:37'),(5,'user5','$2b$12$93f7LhsS1uxv0u.puDH86.odsAhKUH3GHEMP.eTY0LnTw5k2DVB0u','2025-11-11 19:35:37'),(6,'user6','$2b$12$6F957WWC4znU6Q26WIX9a.u2Ysw3o6oNilJdvvYMaDPB85jeYWrL.','2025-11-11 19:35:38'),(7,'user7','$2b$12$Gc9wDbIRnIUO1tcD2LHL1.BjxBPPCYFfGvd0G7/coMWqvat.oD6zW','2025-11-11 19:35:38'),(8,'user8','$2b$12$bJyPOtun.5b6vomZG/nqeuLFdHwkSy5dN1NsIMqYKTk1ZwWF1gH4.','2025-11-11 19:35:38'),(9,'user9','$2b$12$3wVPJb33QnjXftgbTxyV4.1HPw.EnhkQeVXkV5Rv3vBUUGeBp4rKC','2025-11-11 19:35:38'),(10,'user10','$2b$12$PWs5mdRg.ARv9HI6Sv4sJuHc/SdhyZHVsPQ4Fu1ljsh7X3L9TYiVm','2025-11-11 19:35:38'),(11,'user11','$2b$12$eGnNfQT1Y6h59H1Ugv5Eg.RV7jdeK/lK0ZfryzhoF7/Eoeek1kLxq','2025-11-11 19:35:38'),(12,'user12','$2b$12$vT/bFWTHosoPjkiU6UfzaejPK6JvZrnESeYU0rXOYvSg3dr3U4cOu','2025-11-11 19:35:39'),(13,'user13','$2b$12$01jjS0mkwF.hSMqB1E0M/.36A2k9LOwWtzbIjECJcqiNMouTVsyei','2025-11-11 19:35:39'),(14,'user14','$2b$12$o7wx0kV0V9BHTGqMOGWgF.fZq47oN/g05qKhv60gyz7JUW.4yXSjC','2025-11-11 19:35:39'),(15,'user15','$2b$12$1tzD4v8eulsqefFEBFUb0.ZvJC1qNciKzW/xzy6sav2ZfjFYC2ZVS','2025-11-11 19:35:39'),(16,'user16','$2b$12$8LZbItVrTK.HQDiMEG2XKOmh/2v9Hp./UBd2qlv.v4J7RF016kd7K','2025-11-11 19:35:39'),(17,'user17','$2b$12$xgrV302ayr3/AEB12T8spOj0JneKCgYHFtuDVM4ZsnytEDKEu8XLK','2025-11-11 19:35:39'),(18,'user18','$2b$12$78z/CFs8VE.aKsxk/Vqogu4zswvnbjtpkU4Zqr6LDUsynZ/9yV4x6','2025-11-11 19:35:39'),(19,'user19','$2b$12$LX7LLF4M8067PxPey/2Inu2N6R4SZ0flXAgFQ002q/fTrXLx26dva','2025-11-11 19:35:40'),(20,'user20','$2b$12$m./MmNjAzcw0D5pp8Zce9epFnirg3p0Qn3/C1m35lXcGiGgU85nXi','2025-11-11 19:35:40'),(21,'user21','$2b$12$GQUlNJHAFz7Yn1MBfNwrJenZKEc33lrXM6gWA/rv9ZZCjZzPbJMWq','2025-11-11 19:35:40'),(22,'user22','$2b$12$wYqbSlEn8VadoVk5cgmHp.CUYknbRQBsobpkINWkp01DfuI6fZnzO','2025-11-11 19:35:40'),(23,'user23','$2b$12$z31olRezEUS9n1HggipJ1OvQMNHPMB53s7Y1/Bc6tzghXOS50jcrW','2025-11-11 19:35:40');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2025-11-11 21:51:45
