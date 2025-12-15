@@ -1,0 +1,14 @@
+# Simulación de ataque Man-in-the-Middle con Ettercap
+
+En esta práctica se realiza una simulación de un ataque Man-in-the-Middle (MITM)
+utilizando la herramienta Ettercap en Kali Linux.
+
+El ataque se llevó a cabo mediante ARP Poisoning, interceptando el tráfico entre
+la máquina víctima (PC host) y el gateway de la red.
+
+Como prueba del ataque, se capturaron credenciales enviadas en texto plano a
+través de un formulario HTTP del sitio de pruebas http://vulnweb.com, las cuales
+se muestran en la captura incluida en esta carpeta.
+
+Esta práctica se realizó únicamente con fines educativos y en un entorno
+controlado y autorizado.
